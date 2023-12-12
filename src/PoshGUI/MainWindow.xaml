@@ -1,0 +1,48 @@
+﻿<Window
+    x:Class="PoshGUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="WpfWindow"
+    Title="PowerShell GUI"
+    Width="600"
+    Height="460"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    BorderThickness="4"
+    FontSize="18"
+    ResizeMode="CanMinimize"
+    Topmost="True"
+    WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Image
+            x:Name="Logo"
+            Width="570"
+            Height="50"
+            Margin="0,10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Cursor="None"
+            Source="/logo.png"
+            Stretch="Fill"
+            ToolTip="Your Company/Brand logo here" />
+        <Button
+            x:Name="OKButton"
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="10"
+            Background="#00D0A6"
+            BorderBrush="#3C3C3C"
+            BorderThickness="1"
+            Content="O_K"
+            Foreground="#3C3C3C"
+            IsCancel="False"
+            IsDefault="True"
+            IsEnabled="False"
+            ToolTip="Click to..." />
+    </Grid>
+</Window>
